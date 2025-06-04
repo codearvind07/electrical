@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Navbar from '@/components/navbar';
 import FloatingContact from '@/components/floating-contact';
 import Footer from '@/components/footer';
+import PopularLinks from '@/components/PopularLinks';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navbar />
           <FloatingContact />
           <main>{children}</main>
+          <PopularLinks />
           <Footer />
           <Toaster />
         </ThemeProvider>
