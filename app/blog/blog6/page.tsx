@@ -21,38 +21,29 @@ export default function blog6() {
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 
-        <section className="prose lg:prose-lg max-w-none">
-          <p>
-            The Industrial Internet of Things (IIoT) is revolutionizing how industries operate by integrating smart sensors, automation, and data analytics into their workflows.
+        <section className="prose lg:prose-lg max-w-none text-justify">
+          <p className="mb-6">
+            Smart homes aren't just the future , they're the now. From lighting and security to climate control and entertainment, smart home solutions bring convenience, comfort, and control right to your fingertips. At D.P Electricals, we help homeowners transform everyday living into something truly exceptional.
           </p>
 
-          <h2>1. Predictive Maintenance</h2>
-          <p>
-            Instead of waiting for machinery to break down, companies now use sensors and data analysis to anticipate failures. This reduces downtime and extends equipment life.
+          <p className="mb-6">
+            Imagine controlling your entire home with your voice or smartphone. Whether you're turning off lights from your bed, adjusting the thermostat from your office, or checking your front door camera while on vacation , smart technology makes it all possible, and incredibly easy.
           </p>
 
-          <h2>2. Edge Computing</h2>
-          <p>
-            Processing data closer to the source (the edge) means faster insights and less reliance on centralized servers. This is key in time-sensitive industrial applications.
+          <p className="mb-6">
+            We offer a full range of smart home systems including automated lighting, smart thermostats, voice-controlled appliances, remote security monitoring, and more. Everything is designed to fit your lifestyle, improve energy efficiency, and give you peace of mind , even when you're away from home.
           </p>
 
-          <h2>3. Cybersecurity Focus</h2>
-          <p>
-            As devices get smarter, they also become targets. IIoT deployments now prioritize secure protocols and real-time threat detection.
+          <p className="mb-6">
+            Security is a major benefit of smart homes. From motion sensors and door/window alarms to smart locks and real-time camera feeds, our solutions give you total control over your home's safety , anytime, anywhere.
           </p>
 
-          <h2>4. Digital Twins</h2>
-          <p>
-            A digital twin is a virtual representation of a physical system. Companies use them to simulate, monitor, and optimize operations without disrupting actual processes.
+          <p className="mb-6">
+            At D.P Electricals, we make smart simple. Our team not only installs high-quality systems but also ensures everything works together seamlessly. We offer personalized setups, easy-to-use controls, and ongoing support , so you can enjoy the benefits without the hassle.
           </p>
 
-          <h2>5. Interoperability & Open Standards</h2>
-          <p>
-            IIoT systems must talk to each other. Open standards and cross-platform compatibility are crucial for seamless integration across factories and systems.
-          </p>
-
-          <p>
-            As Industrial IoT continues to grow, staying on top of these trends will be essential for future-proofing operations and improving efficiency.
+          <p className="mb-6">
+            Step into the future of comfortable, connected living. With D.P Electricals' Smart Home Solutions, your home isn't just where you live , it's where technology works for you.
           </p>
         </section>
       </article>
