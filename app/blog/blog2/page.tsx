@@ -13,43 +13,32 @@ export default function blog2() {
         <h1 className="text-4xl font-bold mb-4">OUR BLOG</h1>
         <div className="text-sm text-gray-500 mb-6">By DP Electricals • May 30, 2025</div>
 
-        <Image
-          src="/DPElectrical2.png"
+        <Image  
+          src="/blog45.jpeg"
           alt="blog1"
-          width={1200}
-          height={600}
-          className="rounded-xl mb-8 w-full object-cover shadow-md"
+          width={100}
+          height={100}
+          className="rounded-xl mb-8 w-full h-auto mx-auto object-cover shadow-md"
         />
 
-        <section className="prose lg:prose-lg max-w-none">
-          <p>
-            Lighting isn't just about illumination; it's about setting the mood, enhancing aesthetics and improving energy efficiency. D.P Electricals specializes in creating customized lighting solutions that transform spaces into inviting, functional environments.          </p>
+<section className="prose lg:prose-lg max-w-none test-absolute">
+  <p className="mb-6">
+    In factories and commercial buildings, a steady flow of electricity is essential, it keeps everything running smoothly. That’s where bus ducts come in. You may not see them, but they quietly and efficiently carry power where it’s needed. At D.P Electricals, we specialize in designing and installing these systems to ensure your operations never skip a beat.
+  </p>
 
-          <h2> *  </h2>
-          <p>
-                        Effective lighting design is a blend of science and art. It involves understanding color temperature, selecting the right fixtures and harnessing smart lighting technology. D.P Electricals expertise in these areas ensures that their lighting solutions are tailored to meet the unique needs and preferences of homeowners.
+  <p className="mb-6">
+    Bus ducts have big advantages over regular wiring. They’re safer, easier to maintain, and can grow with your business. That means fewer breakdowns, lower costs, and the flexibility to expand when you need to.
+  </p>
 
-          </p>
+  <p className="mb-6">
+    Our team at D.P Electricals knows how important reliable power is for any business. That’s why we build smart, durable bus duct systems that reduce energy loss and prevent downtime ,  keeping your equipment powered and your work on track.
+  </p>
 
-          <h2>*</h2>
-          <p>
-          Color temperature, for instance, plays a vital role in creating the desired ambiance. D.P Electricals helps homeowners choose the right color temperature for different areas, whether it's warm and cozy lighting for the living room or bright, cool lighting for the kitchen.          </p>
+  <p className="mb-6">
+    We’ve helped power everything from factories to office buildings. With D.P Electricals, you get more than just electrical systems. you get dependable, future-ready solutions that help your business grow.
+  </p>
+</section>
 
-          <h2>*</h2>
-          <p>
-          Fixture selection is another critical aspect of lighting design. D.P Electricals offers a wide range of fixtures, from elegant chandeliers to energy-efficient LED bulbs. Their experts guide homeowners in selecting fixtures that match their style and budget.          </p>
-
-          <h2>*</h2>
-          <p>
-            Smart lighting technology is revolutionizing how homes are lit. D.P Electricals provides cutting-edge solutions that allow homeowners to control lighting remotely, set schedules and even change colors to suit different occasions.          </p>
-
-          <h2>*</h2>
-          <p>
-            Real-world examples of D.P Electricalslighting projects demonstrate how lighting can transform spaces. From cozy bedrooms to stylish kitchens, their solutions have enhanced aesthetics and functionality in countless homes. D.P Electricals lighting isn't just about illumination; it's about creating spaces that truly shine.          </p>
-
-          <p>
-          lighting budget style match selecting fixtures experts guide homeowners energy-efficient led bulbs elegant chandeliers wide range dp electrical offers lighting design critical aspect fixture selection kitchen cool lighting bright smart lighting technology living room revolutionizing lit countless homes functionality enhanced aesthetics solutions stylish kitchens cozy bedrooms lighting projects demonstrate real-world examples occasions suit change colors set schedules control lighting remotely cutting-edge solutions dp electrical homes creating spaces cozy lighting areas involves understanding color temperature art science blend effective lighting design functional environments inviting transform spaces creating customized lighting solutions dp electrical specializes improving energy efficiency enhancing aesthetics mood setting illumination selecting warm fixtures dp electrical' dp electrical helps homeowners choose desired ambiance creating vital role plays instance color temperature homeowners preferences unique meet tailored lighting solutions areas ensures expertise harnessing smart lighting technology shine          </p>
-        </section>
       </article>
     </>
   );
