@@ -85,9 +85,9 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Blog Post 1 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog1" className="block relative aspect-[4/3] w-full">
                 <Image
-                  src="DPElectrical3111.png"
+                  src="blog12.jpeg"
                   alt="Submersible Starter Panels"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -97,7 +97,7 @@ export default function BlogPage() {
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <p className="text-white text-lg font-medium">Illuminating Your Space</p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-1">Illuminating Your Space: The Science and Art of Home Lighting by D.P Electricals</h3>
                 <Link
@@ -111,7 +111,7 @@ export default function BlogPage() {
 
             {/* Blog Post 2 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog2" className="block relative aspect-[4/3] w-full">
                 <Image
                   src="/ac-dc-drives-blog.png"
                   alt="AC & DC Drives"
@@ -120,11 +120,11 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <p className="text-white text-lg font-medium">Discover how AC & DC drives improve energy efficiency and motor control.</p>
+                  <p className="text-white text-lg font-medium">Smarter Power Distribution </p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Benefits of AC & DC Drives</h3>
+                <h3 className="text-xl font-semibold mb-1">Smarter Power Distribution for Growing Businesses</h3>
                 <Link
                   href="/blog/blog2"
                   className="text-orange-500 hover:underline font-medium"
@@ -136,7 +136,7 @@ export default function BlogPage() {
 
             {/* Blog Post 3 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog3" className="block relative aspect-[4/3] w-full">
                 <Image
                   src="/synchronizing-panels-blog.jpeg"
                   alt="Synchronizing Panels"
@@ -145,11 +145,11 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <p className="text-white text-lg font-medium">A deep dive into the functionality and applications of synchronizing panels.</p>
+                  <p className="text-white text-lg font-medium">Custom-Built</p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Synchronizing Panels Explained</h3>
+                <h3 className="text-xl font-semibold mb-1">Custom-Built Control Desks That Power Industrial Precision</h3>
                 <Link
                   href="/blog/blog3"
                   className="text-orange-500 hover:underline font-medium"
@@ -161,7 +161,7 @@ export default function BlogPage() {
 
             {/* Blog Post 4 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog4" className="block relative aspect-[4/3] w-full">
                 <Image
                   src="/energy-efficiency.jpeg"
                   alt="Energy Efficiency Tips"
@@ -170,11 +170,11 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <p className="text-white text-lg font-medium">Learn how to optimize energy usage in your home or business.</p>
+                  <p className="text-white text-lg font-medium">Energy Efficiency Tips</p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Energy Efficiency Tips</h3>
+                <h3 className="text-xl font-semibold mb-1"> Learn how to optimize energy usage in your home or business.</h3>
                 <Link
                   href="/blog/blog4"
                   className="text-orange-500 hover:underline font-medium"
@@ -186,7 +186,7 @@ export default function BlogPage() {
 
             {/* Blog Post 5 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog5" className="block relative aspect-[4/3] w-full">
                 <Image
                   src="/industrial-automation.jpeg"
                   alt="Industrial Automation"
@@ -195,11 +195,11 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <p className="text-white text-lg font-medium">Explore the latest trends in industrial automation and control systems.</p>
+                  <p className="text-white text-lg font-medium">Industrial Automation Trends</p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Industrial Automation Trends</h3>
+                <h3 className="text-xl font-semibold mb-1"> Explore the latest trends in industrial automation and control systems.</h3>
                 <Link
                   href="/blog/blog5"
                   className="text-orange-500 hover:underline font-medium"
@@ -211,7 +211,7 @@ export default function BlogPage() {
 
             {/* Blog Post 6 */}
             <Card className="overflow-hidden group relative">
-              <div className="relative aspect-[4/3] w-full">
+              <Link href="/blog/blog6" className="block relative aspect-[4/3] w-full">
                 <Image
                   src="/smart-home.jpg"
                   alt="Smart Home Solutions"
@@ -220,11 +220,11 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <p className="text-white text-lg font-medium">Discover how smart home technology can simplify your life.</p>
+                  <p className="text-white text-lg font-medium">Smart Home Solutions </p>
                 </div>
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Smart Home Solutions</h3>
+                <h3 className="text-xl font-semibold mb-1">Discover how smart home technology can simplify your life.</h3>
                 <Link
                   href="/blog/blog6"
                   className="text-orange-500 hover:underline font-medium"
