@@ -21,34 +21,26 @@ export default function blog5() {
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 
-        <section className="prose lg:prose-lg max-w-none">
-          <p>
-            Lighting isn't just about illumination; it's about setting the mood, enhancing aesthetics and improving energy efficiency. D.P Electricals specializes in creating customized lighting solutions that transform spaces into inviting, functional environments.          </p>
-
-          <h2> *  </h2>
-          <p>
-                        Effective lighting design is a blend of science and art. It involves understanding color temperature, selecting the right fixtures and harnessing smart lighting technology. D.P Electricals expertise in these areas ensures that their lighting solutions are tailored to meet the unique needs and preferences of homeowners.
-
+        <section className="prose lg:prose-lg max-w-none text-justify">
+          <p className="mb-6">
+            When it comes to industrial safety, fire pump panels are absolutely essential — even if they often go unnoticed. These systems are the first to respond in case of a fire, helping protect businesses and facilities from major damage. At D.P Electricals, we specialize in building reliable, modern fire pump panels that help stop fires before they spread.
           </p>
 
-          <h2>*</h2>
-          <p>
-          Color temperature, for instance, plays a vital role in creating the desired ambiance. D.P Electricals helps homeowners choose the right color temperature for different areas, whether it's warm and cozy lighting for the living room or bright, cool lighting for the kitchen.          </p>
+          <p className="mb-6">
+            Fire pump panels are the heart of a fire protection system. As soon as a fire starts, these panels activate and keep water flowing steadily to control the flames. With built-in sensors and smart control systems, they respond quickly to pressure drops and kick in automatically when needed.
+          </p>
 
-          <h2>*</h2>
-          <p>
-          Fixture selection is another critical aspect of lighting design. D.P Electricals offers a wide range of fixtures, from elegant chandeliers to energy-efficient LED bulbs. Their experts guide homeowners in selecting fixtures that match their style and budget.          </p>
+          <p className="mb-6">
+            Different types of fire pump panels serve different needs. Diesel-powered panels are great for places where power outages might happen, ensuring the system keeps running no matter what. Electric panels are efficient and eco-friendly, making them a great choice for many industrial setups.
+          </p>
 
-          <h2>*</h2>
-          <p>
-            Smart lighting technology is revolutionizing how homes are lit. D.P Electricals provides cutting-edge solutions that allow homeowners to control lighting remotely, set schedules and even change colors to suit different occasions.          </p>
+          <p className="mb-6">
+            Like any safety system, regular maintenance is key. D.P Electricals offers routine checks and servicing to make sure your fire pump panel is always in top working condition and ready to perform when it matters most.
+          </p>
 
-          <h2>*</h2>
-          <p>
-            Real-world examples of D.P Electricalslighting projects demonstrate how lighting can transform spaces. From cozy bedrooms to stylish kitchens, their solutions have enhanced aesthetics and functionality in countless homes. D.P Electricals lighting isn't just about illumination; it's about creating spaces that truly shine.          </p>
-
-          <p>
-          lighting budget style match selecting fixtures experts guide homeowners energy-efficient led bulbs elegant chandeliers wide range dp electrical offers lighting design critical aspect fixture selection kitchen cool lighting bright smart lighting technology living room revolutionizing lit countless homes functionality enhanced aesthetics solutions stylish kitchens cozy bedrooms lighting projects demonstrate real-world examples occasions suit change colors set schedules control lighting remotely cutting-edge solutions dp electrical homes creating spaces cozy lighting areas involves understanding color temperature art science blend effective lighting design functional environments inviting transform spaces creating customized lighting solutions dp electrical specializes improving energy efficiency enhancing aesthetics mood setting illumination selecting warm fixtures dp electrical' dp electrical helps homeowners choose desired ambiance creating vital role plays instance color temperature homeowners preferences unique meet tailored lighting solutions areas ensures expertise harnessing smart lighting technology shine          </p>
+          <p className="mb-6">
+            Choosing D.P Electricals means choosing peace of mind. With years of experience and a serious commitment to safety, our fire pump panels have helped protect countless businesses. We're proud to be a trusted name in fire protection.
+          </p>
         </section>
       </article>
     </>
