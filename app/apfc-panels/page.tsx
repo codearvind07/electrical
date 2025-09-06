@@ -2,11 +2,28 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'APFC Panels | Automatic Power Factor Correction Panel Manufacturers',
+  description: 'Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring, energy cost savings, and improved efficiency. Get competitive APFC panel prices in India.',
+  keywords: [
+    'apfc panel manufacturers',
+    'automatic power factor correction panel',
+    'apfc panel price',
+    'apfc panel suppliers in India',
+    'apfc control panel installation',
+    'low voltage apfc panel',
+    'apfc panel dealers in Noida',
+    'automatic power factor correction panel suppliers in Delhi'
+  ],
+};
+
 export default function ApfcPanels() {
   return (
     <>
       <Head>
-        <title>APFC Panel | DP Electricals</title>
+        <title>APFC Panels | Automatic Power Factor Correction Panel Manufacturers</title>
+        <meta name="description" content="Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring, energy cost savings, and improved efficiency. Get competitive APFC panel prices in India." />
+        <meta name="keywords" content="apfc panel manufacturers, automatic power factor correction panel, apfc panel price, apfc panel suppliers in India, apfc control panel installation, low voltage apfc panel" />
       </Head>
 
       {/* Hero Section */}

@@ -3,11 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Submersible Starter Panels | Submersible Pump Control Panel Manufacturers',
+  description: 'Leading submersible starter panel manufacturers and suppliers. High-quality submersible pump control panels with thermal overload protection, voltage monitoring, and durable construction. Get competitive submersible starter panel prices in India.',
+  keywords: [
+    'submersible starter panel',
+    'submersible pump control panel',
+    'submersible starter panel manufacturers',
+    'submersible starter panel price',
+    'submersible pump starter panel suppliers',
+    'submersible control panel box',
+    'submersible starter panel dealers in Noida',
+    'submersible pump control panel suppliers in Delhi'
+  ],
+};
+
 export default function SubmersibleStarterPanels() {
   return (
     <>
       <Head>
-        <title>Submersible Starter Panels | DP Electricals</title>
+        <title>Submersible Starter Panels | Submersible Pump Control Panel Manufacturers</title>
+        <meta name="description" content="Leading submersible starter panel manufacturers and suppliers. High-quality submersible pump control panels with thermal overload protection, voltage monitoring, and durable construction. Get competitive submersible starter panel prices in India." />
+        <meta name="keywords" content="submersible starter panel, submersible pump control panel, submersible starter panel manufacturers, submersible starter panel price, submersible pump starter panel suppliers, submersible control panel box" />
       </Head>
 
       {/* Hero Section */}

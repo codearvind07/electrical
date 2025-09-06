@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+Sitemap: https://dpelectrical.in/sitemap.xml
+
+# Directories
+Disallow: /admin/
+Disallow: /private/
+
+# File types
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+# Specific pages
+Disallow: /api/
+Disallow: /_next/
+
+# Crawl delay
+Crawl-delay: 10

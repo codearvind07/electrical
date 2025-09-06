@@ -3,11 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Cable Tray | Cable Tray Manufacturers',
+  description: 'Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design. Get competitive perforated cable tray prices in India.',
+  keywords: [
+    'cable tray manufacturers',
+    'perforated cable tray suppliers',
+    'cable tray price in India',
+    'gi cable tray manufacturers',
+    'ladder type cable tray',
+    'electrical cable tray system',
+    'cable tray dealers in Noida',
+    'perforated cable tray suppliers in Delhi'
+  ],
+};
+
 export default function ElectronicPanels() {
   return (
     <>
       <Head>
-        <title>Electronic Panel | DP Electricals</title>
+        <title>Cable Tray | Cable Tray Manufacturers</title>
+        <meta name="description" content="Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design. Get competitive perforated cable tray prices in India." />
+        <meta name="keywords" content="cable tray manufacturers, perforated cable tray suppliers, cable tray price in India, gi cable tray manufacturers, ladder type cable tray, electrical cable tray system" />
       </Head>
 
       {/* Header Section */}
@@ -38,7 +55,7 @@ export default function ElectronicPanels() {
                 At D.P. Electricals, we specialize in manufacturing custom cable tray systems designed to support and organize your electrical wiring with unmatched reliability. Whether your project involves industrial, commercial, or infrastructure applications, our cable trays are engineered to meet your exact specifications for performance, strength, and safety.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                Simply provide your project requirements, and we’ll deliver a cable management solution that ensures structural integrity, simplifies installation, and enhances long-term system efficiency.
+                Simply provide your project requirements, and we'll deliver a cable management solution that ensures structural integrity, simplifies installation, and enhances long-term system efficiency.
               </p>
               <ul className="list-disc list-inside text-gray-700 space-y-2 font-medium">
                 <li>Custom-built designs tailored to your layout and load specifications</li>

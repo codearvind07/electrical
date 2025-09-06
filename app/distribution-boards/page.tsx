@@ -2,11 +2,28 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Distribution Panels | Electrical Distribution Panel Manufacturers',
+  description: 'Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control, safety features, and real-time monitoring. Get competitive main distribution board prices in India.',
+  keywords: [
+    'distribution panel board',
+    'electrical distribution panel manufacturers',
+    'distribution panel suppliers',
+    'main distribution board price',
+    'low voltage distribution panel',
+    'power distribution panel box',
+    'distribution panel dealers in Noida',
+    'electrical distribution panels suppliers in Delhi'
+  ],
+};
+
 export default function DistributionBoards() {
   return (
     <>
       <Head>
-        <title>Distribution Boards | DP Electricals</title>
+        <title>Distribution Panels | Electrical Distribution Panel Manufacturers</title>
+        <meta name="description" content="Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control, safety features, and real-time monitoring. Get competitive main distribution board prices in India." />
+        <meta name="keywords" content="distribution panel board, electrical distribution panel manufacturers, distribution panel suppliers, main distribution board price, low voltage distribution panel, power distribution panel box" />
       </Head>
 
       {/* Hero Section */}

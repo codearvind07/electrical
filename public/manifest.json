@@ -1,0 +1,21 @@
+{
+  "name": "DP Electricals",
+  "short_name": "DPElectricals",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "description": "Leading electrical solutions provider since 2001. Specializing in industrial panels, automation, distribution boards, and electrical infrastructure across Noida and India.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

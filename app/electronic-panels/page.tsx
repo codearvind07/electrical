@@ -2,11 +2,28 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Fire Fighting Panels | Fire Pump Control Panel Manufacturers',
+  description: 'Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring. Get competitive fire fighting panel prices in India.',
+  keywords: [
+    'fire fighting control panel',
+    'fire pump control panel manufacturers',
+    'fire fighting panel suppliers',
+    'fire hydrant pump control panel',
+    'fire sprinkler pump panel',
+    'fire fighting panel price in India',
+    'fire fighting control panel dealers in Noida',
+    'fire pump control panel suppliers in Delhi'
+  ],
+};
+
 export default function ElectronicPanels() {
   return (
     <>
       <Head>
-        <title>Electronic Panels | DP Electricals</title>
+        <title>Fire Fighting Panels | Fire Pump Control Panel Manufacturers</title>
+        <meta name="description" content="Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring. Get competitive fire fighting panel prices in India." />
+        <meta name="keywords" content="fire fighting control panel, fire pump control panel manufacturers, fire fighting panel suppliers, fire hydrant pump control panel, fire sprinkler pump panel, fire fighting panel price in India" />
       </Head>
 
       {/* Hero Section */}
@@ -30,14 +47,14 @@ export default function ElectronicPanels() {
                 Customized Electronic Control Panels for Every Application
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                At D.P. Electricals, we specialize in designing and manufacturing custom electronic control panels tailored to your project’s exact needs—be it electrical, electronic, mechanical, or integrated systems.
+                At D.P. Electricals, we specialize in designing and manufacturing custom electronic control panels tailored to your project's exact needs—be it electrical, electronic, mechanical, or integrated systems.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Just share your specifications and we’ll deliver a precise, safe, and high-performance solution designed for long-term reliability.
+                Just share your specifications and we'll deliver a precise, safe, and high-performance solution designed for long-term reliability.
               </p>
 
               <ul className="list-disc list-inside space-y-2 text-gray-700 font-medium">
-                <li>Custom-built to your project’s technical requirements</li>
+                <li>Custom-built to your project's technical requirements</li>
                 <li>Supports hybrid systems: electrical + mechanical + electronic</li>
                 <li>Perfect for automation and industrial power solutions</li>
                 <li>Designed for safety, durability, and continuous operation</li>

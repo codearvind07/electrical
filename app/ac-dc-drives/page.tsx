@@ -2,11 +2,28 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'AC & DC Drives | AC Drives for Motors Manufacturers',
+  description: 'Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control, energy efficiency, and durable construction. Get competitive AC drive prices in India.',
+  keywords: [
+    'ac drives for motors',
+    'dc drives for motors',
+    'ac dc drive manufacturers',
+    'ac drive price in India',
+    'dc motor speed control drives',
+    'industrial ac dc drives suppliers',
+    'ac drives for motors dealers in Noida',
+    'dc drives for motors suppliers in Delhi'
+  ],
+};
+
 export default function AcDcDrives() {
   return (
     <>
       <Head>
-        <title>AC & DC Drives | DP Electricals</title>
+        <title>AC & DC Drives | AC Drives for Motors Manufacturers</title>
+        <meta name="description" content="Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control, energy efficiency, and durable construction. Get competitive AC drive prices in India." />
+        <meta name="keywords" content="ac drives for motors, dc drives for motors, ac dc drive manufacturers, ac drive price in India, dc motor speed control drives, industrial ac dc drives suppliers" />
       </Head>
 
       {/* Hero Section */}
