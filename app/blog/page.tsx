@@ -233,6 +233,81 @@ export default function BlogPage() {
                 </Link>
               </CardContent>
             </Card>
+
+            {/* Blog Post 7 */}
+            <Card className="overflow-hidden group relative">
+              <Link href="/blog/blog7" className="block relative aspect-[4/3] w-full">
+                <Image
+                  src="/APFCPanel.jpg"
+                  alt="Understanding APFC Panels"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <p className="text-white text-lg font-medium">Power Factor Correction</p>
+                </div>
+              </Link>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-1">Understanding APFC Panels: Your Guide to Power Factor Correction</h3>
+                <Link
+                  href="/blog/blog7"
+                  className="text-orange-500 hover:underline font-medium"
+                >
+                  Read More →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Blog Post 8 */}
+            <Card className="overflow-hidden group relative">
+              <Link href="/blog/blog8" className="block relative aspect-[4/3] w-full">
+                <Image
+                  src="/DPElectrical3.jpg"
+                  alt="Industrial Automation Trends"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <p className="text-white text-lg font-medium">Automation Trends</p>
+                </div>
+              </Link>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-1">Industrial Automation Trends: The Future of Electrical Control Systems</h3>
+                <Link
+                  href="/blog/blog8"
+                  className="text-orange-500 hover:underline font-medium"
+                >
+                  Read More →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Blog Post 9 */}
+            <Card className="overflow-hidden group relative">
+              <Link href="/blog/blog9" className="block relative aspect-[4/3] w-full">
+                <Image
+                  src="/Statistics.jpg"
+                  alt="Electrical Safety"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <p className="text-white text-lg font-medium">Industrial Safety</p>
+                </div>
+              </Link>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-1">Electrical Safety in Industrial Environments: Best Practices and Standards</h3>
+                <Link
+                  href="/blog/blog9"
+                  className="text-orange-500 hover:underline font-medium"
+                >
+                  Read More →
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
