@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
-  title: 'APFC Panels | Automatic Power Factor Correction Panel Manufacturers',
-  description: 'Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring, energy cost savings, and improved efficiency. Get competitive APFC panel prices in India.',
+  title: 'APFC Panels | Power Factor Correction Solutions',
+  description: 'Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring and energy cost savings.',
   keywords: [
     'apfc panel manufacturers',
     'automatic power factor correction panel',
@@ -21,8 +21,8 @@ export default function ApfcPanels() {
   return (
     <>
       <Head>
-        <title>APFC Panels | Automatic Power Factor Correction Panel Manufacturers</title>
-        <meta name="description" content="Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring, energy cost savings, and improved efficiency. Get competitive APFC panel prices in India." />
+        <title>APFC Panels | Power Factor Correction Solutions</title>
+        <meta name="description" content="Leading APFC panel manufacturers and suppliers. High-quality automatic power factor correction panels with real-time monitoring and energy cost savings." />
         <meta name="keywords" content="apfc panel manufacturers, automatic power factor correction panel, apfc panel price, apfc panel suppliers in India, apfc control panel installation, low voltage apfc panel" />
       </Head>
 
@@ -48,11 +48,11 @@ export default function ApfcPanels() {
                 Keep Your Power Factor in Check – Automatically with APFC Systems
               </h2>
               <p className="mb-6 text-gray-700">
-                In today’s modern power networks, a wide variety of electrical and power electronic loads create constantly changing demand. This variability can cause your power factor to drop, leading to inefficiencies, higher demand charges, and even penalties from utility companies.
+                In today's modern power networks, a wide variety of electrical and power electronic loads create constantly changing demand. This variability can cause your power factor to drop, leading to inefficiencies, higher demand charges, and even penalties from utility companies.
               </p>
               <p className="mb-6 text-gray-700">
                 <strong>What Is Power Factor – And Why Does It Matter?</strong><br />
-                A low power factor means your facility is not using electricity efficiently. It increases the load on your system and affects your energy bills. That’s where Automatic Power Factor Correction (APFC) systems make a difference.
+                A low power factor means your facility is not using electricity efficiently. It increases the load on your system and affects your energy bills. That's where Automatic Power Factor Correction (APFC) systems make a difference.
               </p>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Benefits of APFC Systems:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">

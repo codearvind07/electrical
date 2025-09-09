@@ -5,8 +5,8 @@ export default function Blog8() {
   return (
     <>
       <Head>
-        <title>Industrial Automation Trends: The Future of Electrical Control Systems | DP Electricals</title>
-        <meta name="description" content="Explore the latest trends in industrial automation and how advanced electrical control systems are shaping the future of manufacturing and industrial processes." />
+        <title>Industrial Automation Trends in Electrical Systems</title>
+        <meta name="description" content="Explore the latest trends in industrial automation and how advanced electrical control systems are shaping the future of manufacturing processes." />
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-12">

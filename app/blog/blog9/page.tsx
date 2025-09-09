@@ -5,8 +5,8 @@ export default function Blog9() {
   return (
     <>
       <Head>
-        <title>Electrical Safety in Industrial Environments: Best Practices and Standards | DP Electricals</title>
-        <meta name="description" content="Discover essential electrical safety practices and standards for industrial environments to protect workers and ensure compliance with regulations." />
+        <title>Electrical Safety in Industrial Environments</title>
+        <meta name="description" content="Best practices and standards for electrical safety in industrial environments to protect workers and equipment from hazards." />
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
-  title: 'Main LT Panel with PLC | Low Tension Electrical Panel Manufacturers',
-  description: 'Leading LT panel manufacturers and suppliers. High-quality main LT switchboards with automatic control, safety features, and real-time monitoring. Get competitive low tension electrical panel prices in India.',
+  title: 'Main LT Panel with PLC | Electrical Panel Solutions',
+  description: 'Leading LT panel manufacturers and suppliers. High-quality main LT switchboards with automatic control, safety features, and real-time monitoring.',
   keywords: [
     'lt panel manufacturers',
     'main lt panel suppliers',
@@ -21,8 +21,8 @@ export default function MainItPanelWithPlc() {
   return (
     <>
       <Head>
-        <title>Main LT Panel with PLC | Low Tension Electrical Panel Manufacturers</title>
-        <meta name="description" content="Leading LT panel manufacturers and suppliers. High-quality main LT switchboards with automatic control, safety features, and real-time monitoring. Get competitive low tension electrical panel prices in India." />
+        <title>Main LT Panel with PLC | Electrical Panel Solutions</title>
+        <meta name="description" content="Leading LT panel manufacturers and suppliers. High-quality main LT switchboards with automatic control, safety features, and real-time monitoring." />
         <meta name="keywords" content="lt panel manufacturers, main lt panel suppliers, low tension electrical panel, lt panel price in India, lt distribution panel board, main lt switchboard" />
       </Head>
 

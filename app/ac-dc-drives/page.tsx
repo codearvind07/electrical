@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'AC & DC Drives | AC Drives for Motors Manufacturers',
-  description: 'Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control, energy efficiency, and durable construction. Get competitive AC drive prices in India.',
+  description: 'Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control and energy efficiency.',
   keywords: [
     'ac drives for motors',
     'dc drives for motors',
@@ -22,7 +22,7 @@ export default function AcDcDrives() {
     <>
       <Head>
         <title>AC & DC Drives | AC Drives for Motors Manufacturers</title>
-        <meta name="description" content="Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control, energy efficiency, and durable construction. Get competitive AC drive prices in India." />
+        <meta name="description" content="Leading AC & DC drives manufacturers and suppliers. High-quality motor drives for industrial applications with precise speed control and energy efficiency." />
         <meta name="keywords" content="ac drives for motors, dc drives for motors, ac dc drive manufacturers, ac drive price in India, dc motor speed control drives, industrial ac dc drives suppliers" />
       </Head>
 

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
-  title: 'Synchronize Panels | Generator Synchronize Panel Manufacturers',
-  description: 'Leading synchronization panel manufacturers and suppliers. High-quality DG synchronization panels with automatic control, safety features, and real-time monitoring. Get competitive auto synchronization panel prices in India.',
+  title: 'Synchronize Panels | Generator Sync Solutions',
+  description: 'Leading synchronization panel manufacturers and suppliers. High-quality DG synchronization panels with automatic control and safety features.',
   keywords: [
     'synchronization panel manufacturers',
     'dg synchronization panel suppliers',
@@ -21,8 +21,8 @@ export default function SynchronizingPanels() {
   return (
     <>
       <Head>
-        <title>Synchronize Panels | Generator Synchronize Panel Manufacturers</title>
-        <meta name="description" content="Leading synchronization panel manufacturers and suppliers. High-quality DG synchronization panels with automatic control, safety features, and real-time monitoring. Get competitive auto synchronization panel prices in India." />
+        <title>Synchronize Panels | Generator Sync Solutions</title>
+        <meta name="description" content="Leading synchronization panel manufacturers and suppliers. High-quality DG synchronization panels with automatic control and safety features." />
         <meta name="keywords" content="synchronization panel manufacturers, dg synchronization panel suppliers, generator synchronize panel, motor control synchronize panel, auto synchronization panel price, electrical synchronize panel" />
       </Head>
 

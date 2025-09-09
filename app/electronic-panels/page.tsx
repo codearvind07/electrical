@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Fire Fighting Panels | Fire Pump Control Panel Manufacturers',
-  description: 'Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring. Get competitive fire fighting panel prices in India.',
+  description: 'Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring.',
   keywords: [
     'fire fighting control panel',
     'fire pump control panel manufacturers',
@@ -22,7 +22,7 @@ export default function ElectronicPanels() {
     <>
       <Head>
         <title>Fire Fighting Panels | Fire Pump Control Panel Manufacturers</title>
-        <meta name="description" content="Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring. Get competitive fire fighting panel prices in India." />
+        <meta name="description" content="Leading fire fighting control panel manufacturers and suppliers. High-quality fire pump control panels with automatic control, safety features, and real-time monitoring." />
         <meta name="keywords" content="fire fighting control panel, fire pump control panel manufacturers, fire fighting panel suppliers, fire hydrant pump control panel, fire sprinkler pump panel, fire fighting panel price in India" />
       </Head>
 

@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'AMF Panels | Automatic Mains Failure Panel Manufacturers',
-  description: 'Leading AMF panel manufacturers and suppliers. High-quality automatic mains failure panels with automatic control, safety mechanisms, and real-time monitoring. Get competitive AMF control panel prices in India.',
+  description: 'Leading AMF panel manufacturers and suppliers. High-quality automatic mains failure panels with automatic control and safety mechanisms.',
   keywords: [
     'amf panel manufacturers',
     'automatic mains failure panel',
@@ -22,7 +22,7 @@ export default function AmfPanels() {
     <>
       <Head>
         <title>AMF Panels | Automatic Mains Failure Panel Manufacturers</title>
-        <meta name="description" content="Leading AMF panel manufacturers and suppliers. High-quality automatic mains failure panels with automatic control, safety mechanisms, and real-time monitoring. Get competitive AMF control panel prices in India." />
+        <meta name="description" content="Leading AMF panel manufacturers and suppliers. High-quality automatic mains failure panels with automatic control and safety mechanisms." />
         <meta name="keywords" content="amf panel manufacturers, automatic mains failure panel, amf control panel price, generator amf panel suppliers, amf panel wiring diagram, amf panel for dg set" />
       </Head>
 

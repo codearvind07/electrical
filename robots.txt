@@ -1,0 +1,51 @@
+# robots.txt for https://dpelectrical.in
+# SEO-friendly configuration
+
+User-agent: *
+# Block sensitive/private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cgi-bin/
+# Allow essential resources for rendering
+Allow: /static/
+Allow: /assets/
+Allow: /images/
+# Block unwanted file types (optional)
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cgi-bin/
+Allow: /static/
+Allow: /assets/
+Allow: /images/
+
+User-agent: Bingbot
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cgi-bin/
+Allow: /static/
+Allow: /assets/
+Allow: /images/
+
+User-agent: Slurp
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cgi-bin/
+Allow: /static/
+Allow: /assets/
+Allow: /images/
+
+# Sitemap location (helps search engines discover pages faster)
+Sitemap: https://dpelectrical.in/sitemap.xml

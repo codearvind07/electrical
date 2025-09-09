@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Cable Tray | Cable Tray Manufacturers',
-  description: 'Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design. Get competitive perforated cable tray prices in India.',
+  description: 'Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design.',
   keywords: [
     'cable tray manufacturers',
     'perforated cable tray suppliers',
@@ -23,7 +23,7 @@ export default function ElectronicPanels() {
     <>
       <Head>
         <title>Cable Tray | Cable Tray Manufacturers</title>
-        <meta name="description" content="Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design. Get competitive perforated cable tray prices in India." />
+        <meta name="description" content="Leading cable tray manufacturers and suppliers. High-quality electrical cable tray systems with durable & corrosion resistant construction, easy installation, and scalable design." />
         <meta name="keywords" content="cable tray manufacturers, perforated cable tray suppliers, cable tray price in India, gi cable tray manufacturers, ladder type cable tray, electrical cable tray system" />
       </Head>
 

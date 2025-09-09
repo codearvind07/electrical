@@ -67,7 +67,7 @@ const keywords = [
 
 export const metadata: Metadata = {
   title: 'DP Electricals - Industrial & Commercial Electrical Solutions | Noida',
-  description: 'DP Electricals - Leading electrical solutions provider since 2001. Specializing in industrial panels, automation, distribution boards, and electrical infrastructure across Noida and India.',
+  description: 'Leading electrical solutions provider since 2001. Specializing in industrial panels, automation, and electrical infrastructure across Noida and India.',
   keywords: keywords,
   authors: [{ name: 'DP Electricals' }],
   creator: 'DP Electricals',
@@ -115,8 +115,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  // Google Search Console verification - replace with your actual verification code
   verification: {
-    google: 'googleedad4fd883bcd292.html',
+    google: 'eaafqH7up2bjYn66g90dS9xLaT4hHcjWbUrHM-gktec',
   },
 };
 
@@ -127,6 +128,59 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google Search Console Verification */}
+       <meta name="google-site-verification" content="eaafqH7up2bjYn66g90dS9xLaT4hHcjWbUrHM-gktec" />
+        
+        {/* Structured Data Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "DP Electricals",
+              "url": "https://dpelectrical.in",
+              "logo": "https://dpelectrical.in/logo.png",
+              "description": "Leading electrical solutions provider since 2001. Specializing in industrial panels, automation, distribution boards, and electrical infrastructure across Noida and India.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Industrial Area",
+                "addressLocality": "Noida",
+                "addressRegion": "UP",
+                "postalCode": "201301",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-XXXXXXXXXX",
+                "contactType": "Customer Service",
+                "availableLanguage": "English"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/dp-electricals",
+                "https://twitter.com/dpelectricals"
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "DP Electricals",
+              "url": "https://dpelectrical.in",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://dpelectrical.in/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />

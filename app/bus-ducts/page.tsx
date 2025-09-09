@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Bus Ducts | Electrical Bus Duct Manufacturers',
-  description: 'Leading bus duct manufacturers and suppliers. High-quality electrical bus duct systems with safe current distribution, expandable & modular design, and compact construction. Get competitive sandwich bus duct prices in India.',
+  description: 'Leading bus duct manufacturers and suppliers. High-quality electrical bus duct systems with safe current distribution and expandable modular design.',
   keywords: [
     'bus duct manufacturers',
     'electrical bus duct suppliers',
@@ -22,7 +22,7 @@ export default function BusDucts() {
     <>
       <Head>
         <title>Bus Ducts | Electrical Bus Duct Manufacturers</title>
-        <meta name="description" content="Leading bus duct manufacturers and suppliers. High-quality electrical bus duct systems with safe current distribution, expandable & modular design, and compact construction. Get competitive sandwich bus duct prices in India." />
+        <meta name="description" content="Leading bus duct manufacturers and suppliers. High-quality electrical bus duct systems with safe current distribution and expandable modular design." />
         <meta name="keywords" content="bus duct manufacturers, electrical bus duct suppliers, sandwich bus duct price, plug-in bus duct system, rising mains bus duct, low voltage bus duct" />
       </Head>
 

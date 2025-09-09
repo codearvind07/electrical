@@ -5,8 +5,8 @@ export default function Blog7() {
   return (
     <>
       <Head>
-        <title>Understanding APFC Panels: Your Guide to Power Factor Correction | DP Electricals</title>
-        <meta name="description" content="Learn about APFC panels and how they help improve power factor correction in electrical systems for better efficiency and cost savings." />
+        <title>APFC Panels Guide: Power Factor Correction Basics</title>
+        <meta name="description" content="Learn about APFC panels and power factor correction to optimize your electrical systems and reduce energy costs." />
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Control Desks | Operator Control Desk Panel Manufacturers',
-  description: 'Leading control desk manufacturers and suppliers. High-quality operator control desk panels with integrated control systems, modular panel design, and operator-friendly layout. Get competitive motor control desk panel prices in India.',
+  description: 'Leading control desk manufacturers and suppliers. High-quality operator control desk panels with integrated control systems and modular panel design.',
   keywords: [
     'control desk manufacturers',
     'operator control desk panel',
@@ -22,7 +22,7 @@ export default function ControlDesks() {
     <>
       <Head>
         <title>Control Desks | Operator Control Desk Panel Manufacturers</title>
-        <meta name="description" content="Leading control desk manufacturers and suppliers. High-quality operator control desk panels with integrated control systems, modular panel design, and operator-friendly layout. Get competitive motor control desk panel prices in India." />
+        <meta name="description" content="Leading control desk manufacturers and suppliers. High-quality operator control desk panels with integrated control systems and modular panel design." />
         <meta name="keywords" content="control desk manufacturers, operator control desk panel, electrical control desk suppliers, motor control desk panel, customized control desk, industrial control desk system" />
       </Head>
 

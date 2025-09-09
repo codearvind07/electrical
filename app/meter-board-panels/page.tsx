@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Meter Box Panels | Electric Meter Box Manufacturers',
-  description: 'Leading meter box panel manufacturers and suppliers. High-quality electric meter boxes with automatic control, built-in safety, and real-time feedback. Get competitive meter box panel prices in India.',
+  description: 'Leading meter box panel manufacturers and suppliers. High-quality electric meter boxes with automatic control, built-in safety, and real-time feedback.',
   keywords: [
     'meter box panel manufacturers',
     'electric meter box suppliers',
@@ -22,7 +22,7 @@ export default function MeterBoardPanels() {
     <>
       <Head>
         <title>Meter Box Panels | Electric Meter Box Manufacturers</title>
-        <meta name="description" content="Leading meter box panel manufacturers and suppliers. High-quality electric meter boxes with automatic control, built-in safety, and real-time feedback. Get competitive meter box panel prices in India." />
+        <meta name="description" content="Leading meter box panel manufacturers and suppliers. High-quality electric meter boxes with automatic control, built-in safety, and real-time feedback." />
         <meta name="keywords" content="meter box panel manufacturers, electric meter box suppliers, meter distribution panel, single phase meter box panel, three phase meter box panel, meter box enclosure" />
       </Head>
 

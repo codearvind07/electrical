@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata = {
-  title: 'Distribution Panels | Electrical Distribution Panel Manufacturers',
-  description: 'Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control, safety features, and real-time monitoring. Get competitive main distribution board prices in India.',
+  title: 'Distribution Panels | Electrical Panel Solutions',
+  description: 'Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control and safety features.',
   keywords: [
     'distribution panel board',
     'electrical distribution panel manufacturers',
@@ -21,8 +21,8 @@ export default function DistributionBoards() {
   return (
     <>
       <Head>
-        <title>Distribution Panels | Electrical Distribution Panel Manufacturers</title>
-        <meta name="description" content="Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control, safety features, and real-time monitoring. Get competitive main distribution board prices in India." />
+        <title>Distribution Panels | Electrical Panel Solutions</title>
+        <meta name="description" content="Leading electrical distribution panel manufacturers and suppliers. High-quality distribution panel boards with automatic control and safety features." />
         <meta name="keywords" content="distribution panel board, electrical distribution panel manufacturers, distribution panel suppliers, main distribution board price, low voltage distribution panel, power distribution panel box" />
       </Head>
 
