@@ -7,6 +7,7 @@ import Navbar from '@/components/navbar';
 import FloatingContact from '@/components/floating-contact';
 import Footer from '@/components/footer';
 import PopularLinks from '@/components/PopularLinks';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -183,6 +184,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
+          <GoogleAnalytics />
           <Navbar />
           <FloatingContact />
           <main>{children}</main>

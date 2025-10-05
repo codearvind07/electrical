@@ -6,10 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, CheckCircle, Handshake, Shield, Zap } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/autoplay'; 
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
 import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import BlogPage from './blog/page';
@@ -22,11 +23,24 @@ import PartnersSection from '@/components/PartnersSection';
 
 
 const slides = [
-  
-
-  '/dropdown/CableTray.png',
-  '/dropdown/Servo Stabilizer.png',
-   '/dropdown/Electrical Control Panel.png',
+  {
+    src: '/DPElectrical2.png',
+    title: 'DP Electricals',
+    description: 'Leading Provider of Industrial Electrical Solutions Since 2001',
+    highlight: 'Trusted by 500+ Clients Across India'
+  },
+  {
+    src: 'dpslider.jpeg',
+    title: 'Premium Control Panels',
+    description: 'High-Quality Electrical Control Panels for Industrial Applications',
+    highlight: 'Custom Solutions for Every Industry'
+  },
+  {
+    src: 'dpslider1.png',
+    title: 'Synchronizing Panels',
+    description: 'Advanced Synchronization Technology for Seamless Power Integration',
+    highlight: 'Precision Engineering for Reliable Performance'
+  }
 ];
 
 
@@ -52,30 +66,79 @@ export default function Home() {
   return (
     <>
       {/* Slider Section */}
-      <section className="py-0 bg-gray-100">
-        <div className=" w-full">
-          <div className="relative mx-auto w-full  max-w-full  overflow-hidden">
+      <section className="py-0 bg-gradient-to-br from-gray-50 to-orange-50">
+        <div className="w-full max-w-full overflow-hidden">
+          <div className="relative w-full aspect-[16/9] md:aspect-[21/9]"> {/* Standard slider aspect ratios */}
             <Swiper
-              spaceBetween={30}
+              spaceBetween={0}
               slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              pagination={{ 
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet bg-white/50 w-3 h-3 rounded-full mx-1 transition-all duration-300',
+                bulletActiveClass: 'swiper-pagination-bullet-active bg-orange-500 w-8 rounded-full'
+              }}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }}
+              autoplay={{ delay: 7000, disableOnInteraction: false }}
               loop
-              modules={[Pagination, Autoplay]}
-              className="h-full"
+              modules={[Pagination, Autoplay, Navigation]}
+              className="w-full h-full rounded-2xl overflow-hidden shadow-2xl"
             >
-              {slides.map((src, i) => (
-                <SwiperSlide key={i}>
+              {slides.map((slide, i) => (
+                <SwiperSlide key={i} className="flex items-center justify-center">
                   <div className="relative w-full h-full">
-                    <img
-                      src={src}
-                      alt={`Slide ${i + 1}`}
-                      className="w-full h-[100%]"
-                      
+                    <Image
+                      src={slide.src}
+                      alt={slide.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 100vw"
+                      priority={i === 0}
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                      }}
                     />
+                    {/* Gradient overlay for better text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+                    
+                    {/* Content overlay */}
+                    <div className="absolute inset-0 flex flex-col justify-center items-start pl-8 md:pl-16 lg:pl-24 text-white">
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="max-w-2xl"
+                      >
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">{slide.title}</h2>
+                        <p className="text-lg md:text-xl mb-4 max-w-2xl">{slide.description}</p>
+                        <p className="text-orange-300 font-semibold text-lg mb-6">{slide.highlight}</p>
+                        <motion.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg"
+                        >
+                          Explore Our Solutions
+                        </motion.button>
+                      </motion.div>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
+              
+              {/* Custom Navigation Buttons */}
+              <div className="swiper-button-next absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div className="swiper-button-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </div>
             </Swiper>
           </div>
         </div>
