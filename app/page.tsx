@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <>
       {/* Slider Section */}
-      <section className="py-0 bg-gradient-to-br from-gray-50 to-orange-50">
+      <section className="py-0 ">
         <div className="w-full max-w-full overflow-hidden">
           <div className="relative w-full aspect-[16/9] md:aspect-[21/9]"> {/* Standard slider aspect ratios */}
             <Swiper
@@ -120,7 +120,9 @@ export default function Home() {
                           whileTap={{ scale: 0.95 }}
                           className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg"
                         >
-                          Explore Our Solutions
+                          <a href="/contact" className="block w-full h-full flex items-center justify-center">
+                            Explore Our Solutions
+                          </a>
                         </motion.button>
                       </motion.div>
                     </div>

@@ -344,7 +344,7 @@ export default function BlogPage() {
                         <span className="text-sm text-gray-500">{post.author}</span>
                       </div>
                       <Link 
-                        href={`/blog/post-${post.id}`} 
+                        href={`/blog/${post.id}`} 
                         className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center group"
                       >
                         Read more
