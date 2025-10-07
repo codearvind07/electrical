@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -51,13 +52,15 @@ export default function ContactPage() {
     <>
       {/* Hero Section with Gradient Background */}
       <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-r from-blue-900 to-indigo-900">
-        {/* Background Image without overlay */}
+        {/* Background Image with proper responsive handling */}
         <div className="absolute inset-0 z-0">
-          <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('/contact.jpg')",
-            }}
+          <Image
+            src="/contact.jpg"
+            alt="Contact Us - DP Electricals"
+            fill
+            className="object-contain sm:object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
           />
         </div>
         

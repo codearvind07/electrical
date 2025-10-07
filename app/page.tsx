@@ -21,7 +21,6 @@ import ImageSection from './ImageSection/page';
 import ProductsPage from './products/page';
 import PartnersSection from '@/components/PartnersSection';
 
-
 const slides = [
   {
     src: '/DPElectrical2.png',
@@ -30,19 +29,18 @@ const slides = [
     highlight: 'Trusted by 500+ Clients Across India'
   },
   {
-    src: 'dpslider.jpeg',
+    src: '/dpslider.jpeg',
     title: 'Premium Control Panels',
     description: 'High-Quality Electrical Control Panels for Industrial Applications',
     highlight: 'Custom Solutions for Every Industry'
   },
   {
-    src: 'dpslider1.png',
+    src: '/dpslider1.png',
     title: 'Synchronizing Panels',
     description: 'Advanced Synchronization Technology for Seamless Power Integration',
     highlight: 'Precision Engineering for Reliable Performance'
   }
 ];
-
 
 const features = [
   {
@@ -66,9 +64,9 @@ export default function Home() {
   return (
     <>
       {/* Slider Section */}
-      <section className="py-0 ">
+      <section className="py-0">
         <div className="w-full max-w-full overflow-hidden">
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/9]"> {/* Standard slider aspect ratios */}
+          <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
             <Swiper
               spaceBetween={0}
               slidesPerView={1}
@@ -101,32 +99,7 @@ export default function Home() {
                         target.style.display = 'none';
                       }}
                     />
-                    {/* Gradient overlay for better text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-                    
-                    {/* Content overlay */}
-                    <div className="absolute inset-0 flex flex-col justify-center items-start pl-8 md:pl-16 lg:pl-24 text-white">
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="max-w-2xl"
-                      >
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">{slide.title}</h2>
-                        <p className="text-lg md:text-xl mb-4 max-w-2xl">{slide.description}</p>
-                        <p className="text-orange-300 font-semibold text-lg mb-6">{slide.highlight}</p>
-                        <motion.button
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg"
-                        >
-                          <a href="/contact" className="block w-full h-full flex items-center justify-center">
-                            Explore Our Solutions
-                          </a>
-                        </motion.button>
-                      </motion.div>
                     </div>
-                  </div>
                 </SwiperSlide>
               ))}
               
@@ -146,10 +119,9 @@ export default function Home() {
         </div>
       </section>
 
-         {/* Handshake Section */}
-         <HandShake/>
-              {/* <ImageSection/> */}
-              
+      {/* Handshake Section */}
+      <HandShake />
+      
       {/* Welcome Section */}
       <section className="py-4 bg-white">
         <div className="container mx-auto px-4 text-center">
@@ -209,28 +181,26 @@ export default function Home() {
             <p className="text-gray-900 font-roboto max-w-3xl mx-auto">
               Your Trusted Partner for Safe, Reliable & Innovative Electrical Solutions
             </p>
-            {/* <h2 className="text-xl -roboto mb-4">Licensed & Certified Electricians</h2> */}
             <p className="text-gray-900 font-roboto max-w-3xl mx-auto">
               Our team consists of licensed professionals with years of combined experience, ensuring code-compliant installations and repairs.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {features.map(({ icon, title, desc }, i) => (
-    <div
-      key={i}
-      className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 group"
-    >
-      <div
-        className="mb-4 text-orange-500 text-4xl transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6"
-      >
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{desc}</p>
-    </div>
-  ))}
-</div>
-
+            {features.map(({ icon, title, desc }, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 group"
+              >
+                <div
+                  className="mb-4 text-orange-500 text-4xl transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6"
+                >
+                  {icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                <p className="text-gray-600">{desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -493,13 +463,11 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='w-full' >
-
+      <div className='w-full'>
         <BlogPage />
       </div>
 
       <ContactPage />
-
       <PartnersSection />
     </>
   );
@@ -512,8 +480,8 @@ const AnimatedStatCard = ({ icon, endValue, label, suffix = "" }: { icon: React.
 
   useEffect(() => {
     let start = 0;
-    const duration = 2000; // 2 seconds
-    const increment = endValue / (duration / 16); // 60fps
+    const duration = 2000;
+    const increment = endValue / (duration / 16);
 
     if (isInView) {
       const timer = setInterval(() => {
@@ -524,7 +492,7 @@ const AnimatedStatCard = ({ icon, endValue, label, suffix = "" }: { icon: React.
         } else {
           setCount(Math.floor(start));
         }
-      }, 16); // ~60fps
+      }, 16);
 
       return () => clearInterval(timer);
     }

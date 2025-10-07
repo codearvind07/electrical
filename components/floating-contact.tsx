@@ -16,25 +16,25 @@ export default function FloatingContact() {
   return (
     <div className={`fixed left-0 top-1/3 z-50 flex flex-col gap-3 transition-all duration-500 ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
       <Link href="mailto:dpelectrical85@gmail.com">
-        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-colors duration-200">
+        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg">
           <Mail className="text-orange-500 h-6 w-6" />
         </div>
       </Link>
       
       <Link href="tel:9818144519">
-        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-colors duration-200">
+        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg">
           <Phone className="text-orange-500 h-6 w-6" />
         </div>
       </Link>
       
       <Link href="/contact">
-        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-colors duration-200">
+        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg">
           <MapPin className="text-orange-500 h-6 w-6" />
         </div>
       </Link>
       
       <Link href="https://wa.me/919818144519" target="_blank" rel="noopener noreferrer">
-        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-colors duration-200">
+        <div className="bg-white rounded-r-full p-3 shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg">
           <div className="relative h-6 w-6">
             <Image
               src="/whatsapp.png"

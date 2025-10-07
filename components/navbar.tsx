@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import Dropdown from '../components/Dropdown';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const products = [
   { name: 'Submersible Starter Panels', href: '/submersiblestarterpanels' },
@@ -27,6 +27,8 @@ const gallery = [{ name: 'Image', href: '/gallery/image' }];
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,7 +83,7 @@ export default function Navbar() {
             <span className="flex items-center px-4 py-2 text-sm font-medium text-gray-800 cursor-pointer hover:text-orange-500 transition-colors duration-300 rounded-lg hover:bg-gray-50">
               Products <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
             </span>
-            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-white/90 backdrop-blur-xl shadow-xl rounded-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-white/95 backdrop-blur-xl shadow-xl rounded-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="grid grid-cols-2 gap-1 p-4">
                 {products.map((product, index) => (
                   <Link
@@ -101,7 +103,7 @@ export default function Navbar() {
             <span className="flex items-center px-4 py-2 text-sm font-medium text-gray-800 cursor-pointer hover:text-orange-500 transition-colors duration-300 rounded-lg hover:bg-gray-50">
               Gallery <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
             </span>
-            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white/90 backdrop-blur-xl shadow-xl rounded-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white/95 backdrop-blur-xl shadow-xl rounded-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="py-2">
                 {gallery.map((item, index) => (
                   <Link
@@ -136,7 +138,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link
-            href="/contact"
+            href="/enquire"
             className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-amber-500 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
           >
             Get Quote
@@ -147,6 +149,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
         >
           {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -176,42 +179,72 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="px-6 py-3">
-                <div className="flex flex-col">
-                  <span className="flex items-center text-sm font-medium text-gray-800">
-                    Products <ChevronDown className="ml-1 h-4 w-4" />
-                  </span>
-                  <div className="mt-2 pl-4 space-y-2">
-                    {products.map((product, index) => (
-                      <Link
-                        key={index}
-                        href={product.href}
-                        className="block py-2 text-sm text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg px-3 transition-colors duration-200"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {product.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                <button
+                  className="flex items-center w-full text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200"
+                  onClick={() => setIsProductsOpen(!isProductsOpen)}
+                  aria-expanded={isProductsOpen}
+                  aria-controls="products-dropdown"
+                >
+                  Products
+                  <ChevronDown className={cn('ml-1 h-4 w-4 transition-transform duration-200', isProductsOpen ? 'rotate-180' : '')} />
+                </button>
+                <AnimatePresence>
+                  {isProductsOpen && (
+                    <motion.div
+                      id="products-dropdown"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="pl-6 space-y-2 mt-2"
+                    >
+                      {products.map((product, index) => (
+                        <Link
+                          key={index}
+                          href={product.href}
+                          className="block py-2 text-sm text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg px-3 transition-colors duration-200"
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </li>
               <li className="px-6 py-3">
-                <div className="flex flex-col">
-                  <span className="flex items-center text-sm font-medium text-gray-800">
-                    Gallery <ChevronDown className="ml-1 h-4 w-4" />
-                  </span>
-                  <div className="mt-2 pl-4 space-y-2">
-                    {gallery.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.href}
-                        className="block py-2 text-sm text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg px-3 transition-colors duration-200"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                <button
+                  className="flex items-center w-full text-sm font-medium text-gray-800 hover:text-orange-500 transition-colors duration-200"
+                  onClick={() => setIsGalleryOpen(!isGalleryOpen)}
+                  aria-expanded={isGalleryOpen}
+                  aria-controls="gallery-dropdown"
+                >
+                  Gallery
+                  <ChevronDown className={cn('ml-1 h-4 w-4 transition-transform duration-200', isGalleryOpen ? 'rotate-180' : '')} />
+                </button>
+                <AnimatePresence>
+                  {isGalleryOpen && (
+                    <motion.div
+                      id="gallery-dropdown"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="pl-6 space-y-2 mt-2"
+                    >
+                      {gallery.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block py-2 text-sm text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg px-3 transition-colors duration-200"
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </li>
               <li>
                 <Link
@@ -234,7 +267,7 @@ export default function Navbar() {
             </ul>
             <div className="p-6 pt-0">
               <Link
-                href="/contact"
+                href="/enquire"
                 className="block w-full text-center px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-amber-500 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
                 onClick={() => setMenuOpen(false)}
               >

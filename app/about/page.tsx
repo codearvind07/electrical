@@ -58,14 +58,15 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
       {/* Hero Section with Enhanced Gradient */}
-      <section className="relative w-full h-[500px] overflow-hidden">
+      <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/about-us.jpeg"
             alt="About Us - DP Electricals"
             fill
-            className="object-cover"
+            className="object-contain sm:object-cover"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
         </div>
@@ -128,13 +129,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl"
+              className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl"
             >
               <Image
                 src="/our-story.jpg"
                 alt="Our Story - DP Electricals"
                 fill
-                className="object-cover"
+                className="object-contain sm:object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </motion.div>
@@ -264,13 +266,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+              className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
             >
               <Image
                 src="/vision.jpg"
                 alt="Our Vision - DP Electricals"
                 fill
-                className="object-cover"
+                className="object-contain sm:object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             </motion.div>
