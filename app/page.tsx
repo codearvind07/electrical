@@ -23,19 +23,19 @@ import PartnersSection from '@/components/PartnersSection';
 
 const slides = [
   {
-    src: '/DPElectrical2.png',
+    src: '/dpslider1.png',
     title: 'DP Electricals',
     description: 'Leading Provider of Industrial Electrical Solutions Since 2001',
     highlight: 'Trusted by 500+ Clients Across India'
   },
   {
-    src: '/dpslider.jpeg',
+    src: '/newslider2.png',
     title: 'Premium Control Panels',
     description: 'High-Quality Electrical Control Panels for Industrial Applications',
     highlight: 'Custom Solutions for Every Industry'
   },
   {
-    src: '/dpslider1.png',
+    src: '/newslider3.png',
     title: 'Synchronizing Panels',
     description: 'Advanced Synchronization Technology for Seamless Power Integration',
     highlight: 'Precision Engineering for Reliable Performance'
@@ -65,7 +65,7 @@ export default function Home() {
     <>
       {/* Slider Section */}
       <section className="py-0">
-        <div className="w-full max-w-full overflow-hidden">
+        <div className="w-full max-w-full overflow-hidden rounded-3xl shadow-2xl">
           <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
             <Swiper
               spaceBetween={0}
@@ -82,35 +82,54 @@ export default function Home() {
               autoplay={{ delay: 7000, disableOnInteraction: false }}
               loop
               modules={[Pagination, Autoplay, Navigation]}
-              className="w-full h-full rounded-2xl overflow-hidden shadow-2xl"
+              className="w-full h-full rounded-3xl overflow-hidden shadow-xl"
             >
               {slides.map((slide, i) => (
-                <SwiperSlide key={i} className="flex items-center justify-center">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={slide.src}
-                      alt={slide.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 100vw"
-                      priority={i === 0}
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                      }}
-                    />
+                <SwiperSlide key={i} className="flex items-center justify-center bg-gradient-to-r from-[#f6d365] to-[#fda085]">
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <div className="w-full h-full transition-transform duration-1000 ease-in-out transform hover:scale-105 flex items-center justify-center">
+                      <Image
+                        src={slide.src}
+                        alt={slide.title}
+                        fill
+                        className="object-contain w-full h-full max-h-full max-w-full p-4 md:p-8"
+                        sizes="(max-width: 768px) 100vw, 100vw"
+                        priority={i === 0}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                        }}
+                      />
                     </div>
+                    {/* Enhanced Text Overlay - Professional one-line content at top */}
+                    <div className="absolute top-0 left-0 right-0 flex flex-col md:flex-row items-center justify-between p-2 md:p-4 bg-gradient-to-b from-black/70 to-transparent">
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 rounded-full bg-amber-400 mr-2 animate-pulse"></div>
+                        <h2 className="text-base md:text-xl font-bold text-white drop-shadow-lg">
+                          {slide.title}
+                        </h2>
+                      </div>
+                      <div className="flex items-center space-x-2 mt-1 md:mt-0">
+                        <span className="hidden sm:inline text-xs md:text-sm text-orange-100">
+                          {slide.description}
+                        </span>
+                        <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                          {slide.highlight}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </SwiperSlide>
               ))}
               
-              {/* Custom Navigation Buttons */}
-              <div className="swiper-button-next absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {/* Enhanced Navigation Buttons */}
+              <div className="swiper-button-next absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-lg flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <div className="swiper-button-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="swiper-button-prev absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-lg flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 after:hidden shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </div>
